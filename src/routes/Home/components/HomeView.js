@@ -1,12 +1,19 @@
 import React from 'react'
-import DuckImage from '../assets/Duck.jpg'
-import './HomeView.scss'
+import { Button } from 'antd';
 
-export const HomeView = () => (
-  <div>
-    <h4>Welcome!</h4>
-    <img alt='This is a duck, because Redux!' className='duck' src={DuckImage} />
-  </div>
-)
+
+class  HomeView extends React.Component{
+
+  render(){
+    return(
+      <div className="HomepageDiv">
+      <h1>Polling System</h1>
+      <br />
+      <Button type="primary">Login</Button>
+      <Button type="primary" className="SignUpButton">Signup</Button>
+      </div>
+    );
+  }
+}
 
 export default HomeView
